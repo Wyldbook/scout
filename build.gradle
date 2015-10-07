@@ -3,8 +3,18 @@ version '0.1.0-SNAPSHOT'
 
 apply plugin: 'java'
 
-subprojects {
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.7'
+}
+
+allprojects {
     apply plugin: 'java'
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+}
+
+
+subprojects {
     group 'scout'
     version '0.1.0-SNAPSHOT'
     repositories {
