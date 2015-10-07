@@ -1,0 +1,8 @@
+group 'scout'
+version '0.1.0-SNAPSHOT'
+
+dependencies {
+    testCompile group: 'junit', name: 'junit'
+    compile group: 'io.dropwizard', name: 'dropwizard-core'
+    compile 'org.mockito:mockito-core'
+}
