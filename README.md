@@ -1,3 +1,3 @@
-<img src="scout.png" alt="Scout" width="330" height="248">
+<img src="scout.png" alt="Scout">
 # scout  [![Build Status](https://snap-ci.com/Wyldbook/scout/branch/master/build_image)](https://snap-ci.com/Wyldbook/scout/branch/master)
 Simplified domain rich resource management and search solution with ability to switch search backends
