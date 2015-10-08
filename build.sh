@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home
-./gradlew clean test assemble
+java -version
+./gradlew clean shadowJar

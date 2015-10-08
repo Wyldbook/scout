@@ -1,0 +1,8 @@
+server:
+  type: simple
+  applicationContextPath: /scout
+  connector:
+    type: http
+    port: 8001
+swagger:
+  resourcePackage: com.wyldbook.scout.search.web

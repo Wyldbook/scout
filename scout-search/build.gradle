@@ -1,8 +1,21 @@
-group 'scout'
-version '0.1.0-SNAPSHOT'
+apply plugin: 'application'
+apply plugin: 'com.github.johnrengelman.shadow'
 
 dependencies {
-    testCompile group: 'junit', name: 'junit'
     compile group: 'io.dropwizard', name: 'dropwizard-core'
-    compile 'org.mockito:mockito-core'
+
+
+    testCompile group: 'junit', name: 'junit'
+    testCompile 'org.mockito:mockito-core'
+}
+
+mainClassName = 'com.wyldbook.scout.app.ScoutApplication'
+import com.github.jengelman.gradle.plugins.shadow.transformers.ServiceFileTransformer
+
+shadowJar {
+    transform(ServiceFileTransformer) {
+        exclude 'META-INF/*.SF'
+        exclude 'META-INF/*.DSA'
+        exclude 'META-INF/*.RSA'
+    }
 }
