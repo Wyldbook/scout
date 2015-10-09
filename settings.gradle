@@ -1,2 +1,4 @@
 rootProject.name = 'scout'
 include 'scout-search'
+include 'scout-utils'
+

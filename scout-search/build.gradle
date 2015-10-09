@@ -3,6 +3,7 @@ apply plugin: 'com.github.johnrengelman.shadow'
 
 dependencies {
     compile group: 'io.dropwizard', name: 'dropwizard-core'
+    compile project(':scout-utils')
 
 
     testCompile group: 'junit', name: 'junit'
